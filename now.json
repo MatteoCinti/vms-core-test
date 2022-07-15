@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "regions": ["cdg1"],
+  "scope": "vms",
+  "builds": [{ "src": "/src/api/**/*.server.ts", "use": "@vercel/node" }],
+  "routes": [
+    { "src": "/test(.*)", "dest": "src/api/test/test.server.ts" }
+  ]
+}
